@@ -1,4 +1,6 @@
 # Selection sort and Insertion sort
+### Name: Anbuselvan.S
+### Reference No: 23005959
 ## Aim:
 To write a program to perform selection sort and insertion sort using python programming.
 ## Equipment’s required:
@@ -20,24 +22,35 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
-
-
-
-
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[low]:
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+    print(nums)    
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
 ```
 ii)	#Insertion Sort
 ```
-
-
-
-
-
-
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[low]:
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+   
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 ```
 
 ## Output:
-
+![image](https://github.com/anbuselvan1519/Sorting-Algorithm/assets/139841744/14266c52-a499-438d-91bc-a841ded0b124)
+![image](https://github.com/anbuselvan1519/Sorting-Algorithm/assets/139841744/186f5a08-7e8e-4121-b43d-6e28533b28f8)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
